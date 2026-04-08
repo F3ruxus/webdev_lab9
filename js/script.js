@@ -4,11 +4,14 @@ function init(){
   var usrInput = document.getelementById("entryinput");
   var output = document.getElementById("textoutput");
 
-  button.addEventListener("click", function() {
-    var usrText= usrInput.value;
+  function handleClick() {
+    var usrText = usrInput.value;
+    
     alert("Juan Garcia: " + usrText);
+
     output.textContent = usrText;
-  });
+  }
+  button.addEventListener("click", handleClick);
 
 
 
