@@ -1,15 +1,12 @@
 function init(){
 //add your javascrip between these two lines of code
-  var button = document.getElementById("entrybutton");
-  var usrInput = document.getelementById("entryinput");
-  var output = document.getElementById("textoutput");
+  var button = document.getElementById('entrybutton');
 
   function handleClick() {
-    var usrText = usrInput.value;
+    var usrInput = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = usrInput.value;
     
-    alert("Juan Garcia: " + usrText);
-
-    output.textContent = usrText;
+    alert("Juan Garcia: " + usrInput.value);
   }
   button.addEventListener("click", handleClick);
 
